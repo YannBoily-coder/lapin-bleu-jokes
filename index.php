@@ -74,13 +74,26 @@ $random = $results[array_rand($results)];
 h1 {
   font-family: 'Orbitron', sans-serif;
 
-  /* Dégradé diagonal */
-  background: linear-gradient(135deg, #4da6ff, #1e90ff, #0066ff);
+  /* Dégradé holographique */
+  background: linear-gradient(135deg, #4da6ff, #1e90ff, #00c3ff, #4da6ff);
+  background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* Ombre portée vers la droite */
-  text-shadow: 6px 3px 8px rgba(0, 102, 255, 0.6);
+  /* Animation hologramme */
+  animation: holoMove 4s ease-in-out infinite;
+
+  /* Glow + ombre portée */
+  text-shadow:
+    6px 3px 8px rgba(0, 102, 255, 0.5),
+    0 0 12px rgba(77, 166, 255, 0.6),
+    0 0 25px rgba(0, 153, 255, 0.4);
+}
+
+@keyframes holoMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
 }
 </style>  
 </head>
