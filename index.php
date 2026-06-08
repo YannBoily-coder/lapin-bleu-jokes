@@ -69,6 +69,13 @@ $random = $results[array_rand($results)];
 <head>
 <meta charset="utf-8">
 <title>Lapin Bleu – JCVD Aware</title>
+<style>
+h1 {
+  color: #4da6ff;
+  text-shadow: 0 0 10px #4da6ff, 0 0 20px #1e90ff;
+  font-weight: 900;
+}
+</style>  
 </head>
 <body>
 <h1>💙🐇 Lapin Bleu – Mode JCVD 🐇💙</h1>
