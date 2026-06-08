@@ -74,14 +74,15 @@ $random = $results[array_rand($results)];
 h1 {
   font-family: 'Orbitron', sans-serif;
 
-  /* Dégradé holographique */
+  /* Dégradé holographique animé */
   background: linear-gradient(135deg, #4da6ff, #1e90ff, #00c3ff, #4da6ff);
   background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Animation hologramme */
   animation: holoMove 4s ease-in-out infinite;
+
+  /* Le secret pour que ça BRILLE vraiment */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 
   /* Glow + ombre portée */
   text-shadow:
