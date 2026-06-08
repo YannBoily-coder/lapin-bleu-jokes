@@ -69,11 +69,18 @@ $random = $results[array_rand($results)];
 <head>
 <meta charset="utf-8">
 <title>Lapin Bleu – JCVD Aware</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <style>
 h1 {
-  color: #4da6ff;
-  text-shadow: 0 0 10px #4da6ff, 0 0 20px #1e90ff;
-  font-weight: 900;
+  font-family: 'Orbitron', sans-serif;
+
+  /* Dégradé diagonal */
+  background: linear-gradient(135deg, #4da6ff, #1e90ff, #0066ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Ombre portée vers la droite */
+  text-shadow: 6px 3px 8px rgba(0, 102, 255, 0.6);
 }
 </style>  
 </head>
