@@ -65,6 +65,154 @@ $results = [
 
 $random = $results[array_rand($results)];
 
+// pipotron_insultotron.php
+
+// --- Blocs Pipotron (pseudo-sérieux) ---
+$pipo_start = [
+    "Quelle que soit la dégradation des mœurs induite,",
+    "Dans la mesure où la transversalité des enjeux structurels impose une réflexion holistique,",
+    "Eu égard à la sinistrose ambiante,",
+    "Si l’on tient compte de l’ensemble des paramètres systémiques,",
+    "Dans une perspective globale et néanmoins locale,",
+    "Compte tenu de la complexité de la situation,"
+];
+
+$pipo_middle = [
+    "il faut se remémorer l’ensemble des ouvertures sensées",
+    "il convient de ne pas négliger la totalité des facteurs implicites",
+    "il est indispensable de réévaluer les options envisageables",
+    "on ne peut ignorer la multiplicité des approches possibles",
+    "il devient urgent de reconsidérer les cadres de référence",
+    "il apparaît nécessaire de prendre en compte les dérives potentielles"
+];
+
+$pipo_end = [
+    "dans une perspective correcte.",
+    "dans un contexte apaisé.",
+    "dans une logique de progrès durable.",
+    "dans un cadre responsable.",
+    "dans une dynamique constructive.",
+    "dans un esprit d’ouverture."
+];
+
+// --- Blocs Insultotron (bien sale) ---
+$ins1 = [
+    "Espèce de gros con",
+    "Espèce de petit salaud",
+    "Espèce de vieux bâtard",
+    "Espèce de pauvre mec",
+    "Espèce de sous-merde",
+    "Espèce de grosse fiotte",
+    "Espèce de gros fils de pute"
+];
+
+$ins2 = [
+    "de ta race,",
+    "de ta mère,",
+    "des forêts,",
+    "qui pue,",
+    "débile,",
+    "assexué,",
+    "alcoolique,",
+    "lobotomisé,"
+];
+
+$ins3 = [
+    "tu es",
+    "tu pourrais être",
+    "tu ressembles à",
+    "tu me fais penser à",
+    "tu ne vaux pas mieux qu'"
+];
+
+$ins4 = [
+    "une sale merde",
+    "un parasite",
+    "un gros naze",
+    "un petit bouffon",
+    "un minable",
+    "un gland"
+];
+
+$ins5 = [
+    "qui pue,",
+    "de service,",
+    "totalement minable,",
+    "en polystyrène,",
+    "immonde,",
+    "boutonneux,"
+];
+
+$ins6 = [
+    "je voudrais",
+    "j'aurais aimé",
+    "je sais pas ce qui me retient de",
+    "je rêve de",
+    "je crève d'envie de",
+    "j'ai fait le pari de"
+];
+
+$ins7 = [
+    "t'éclater la gueule",
+    "te brûler la cervelle",
+    "te broyer les couilles",
+    "t'exploser la tête",
+    "te gerber dessus",
+    "t'arracher les yeux",
+    "te découper en morceaux"
+];
+
+$ins8 = [
+    "juste un peu",
+    "une bonne fois",
+    "de temps en temps",
+    "jusqu'à l'aube",
+    "vite fait",
+    "pour rigoler",
+    "quand tu veux"
+];
+
+$ins9 = [
+    "ou tu veux",
+    "au boulot",
+    "sous la lune",
+    "devant témoins",
+    "après le match de foot",
+    "sans complexes"
+];
+
+function r($arr) {
+    return $arr[array_rand($arr)];
+}
+
+function generate_pipo_insulto() {
+    global $pipo_start, $pipo_middle, $pipo_end;
+    global $ins1, $ins2, $ins3, $ins4, $ins5, $ins6, $ins7, $ins8, $ins9;
+
+    // Partie Pipotron
+    $p1 = r($pipo_start);
+    $p2 = r($pipo_middle);
+    $p3 = r($pipo_end);
+
+    // Partie Insultotron
+    $i1 = r($ins1);
+    $i2 = r($ins2);
+    $i3 = r($ins3);
+    $i4 = r($ins4);
+    $i5 = r($ins5);
+    $i6 = r($ins6);
+    $i7 = r($ins7);
+    $i8 = r($ins8);
+    $i9 = r($ins9);
+
+    // Fusion : sérieux → dérapage
+    $sentence  = $p1 . " " . $p2 . " " . $p3 . " ";
+    $sentence .= $i1 . " " . $i2 . " " . $i3 . " " . $i4 . " " . $i5 . " ";
+    $sentence .= $i6 . " " . $i7 . " " . $i8 . " " . $i9 . ".";
+
+    return $sentence;
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -98,11 +246,13 @@ h1 {
   50% { background-position: 100% 100%; }
   100% { background-position: 0% 0%; }
 }
-</style>  
+</style>
 </head>
 <body>
 <h1>💙🐇 Lapin Bleu – Mode JCVD 🐇💙</h1>
 <p>Jean-Claude Van Damme n'est pas sur ::chan:: aujourd'hui, mais il a dit çà...:"</p>
 <p><?php echo stripslashes($random); ?></p>
+<h1>🌀🦊 Pipotron × Insultotron 🦊🌀</h1>
+<p><?php echo generate_pipo_insulto(); ?></p>
 </body>
 </html>
