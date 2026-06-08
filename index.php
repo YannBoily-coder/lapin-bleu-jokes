@@ -71,7 +71,7 @@ $random = $results[array_rand($results)];
 <title>Lapin Bleu – JCVD Aware</title>
 </head>
 <body>
-<h1>켽弇 Lapin Bleu – Mode JCVD</h1>
+<h1>💙🐇 Lapin Bleu – Mode JCVD 🐇💙</h1>
 <p>Jean-Claude Van Damme n'est pas sur ::chan:: aujourd'hui, mais il a dit çà...:"</p>
 <p><?php echo stripslashes($random); ?></p>
 </body>
