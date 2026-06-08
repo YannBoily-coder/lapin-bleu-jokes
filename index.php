@@ -2,6 +2,8 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 $results = [
+  "Tu vois une noix ? Je la casse avec mon cerveau. Pas besoin de marteau, le mental fait le split direct. L\’air de la coquille, c’est un peu comme la vie… dedans y\’a la vérité, dehors que des illusions.",
+  "Tu vois une noix cosmique dans tes rêves ? Je la splitte avec mon subconscient quantique. Pas besoin de marteau, le mental fait le grand écart entre les dimensions. L\’air de la coquille… c\’est la vie legacy, dedans y\’a la vérité du PHP moderne, dehors que des illusions de TCL. Copilot ? Le lapin bleu qui guide le split onirique ! 😌✨",
   "Je suis fascine par l\'air. Si on enlevait l\'air du ciel, tous les oiseaux tomberaient par terre....Et les avions aussi.... En meme temps l\'air tu peux pas le toucher...ca existe et ca existe pas...Ca nourrit l\'homme sans qu\'il ait faim...It\'s magic...L\'air c\'est beau en meme temps tu peux pas le voir, c\'est doux et tu peux pas le toucher.....L\'air c\'est un peu comme mon cerveau...",
   "Une noisette, j\'la casse entre mes fesses tu vois... ",
   "J\'adore les cacahuetes. Tu bois une biere et tu en as marre du gout. Alors tu manges des cacahuetes. Les cacahuetes c\'est doux et salé, fort et tendre,comme une femme. Manger des cacahuetes, it\'s a really strong feeling. Et apres tu as de nouveau envie de boire de la bière. Les cacahuetes c\'est le mouvement perpétuel à la portée de l\'homme",
